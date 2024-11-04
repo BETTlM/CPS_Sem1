@@ -35,4 +35,3 @@ Whisper Docs is a desktop application that converts PDF documents to audio files
 
 4. **Convert to audio** by clicking the `Convert PDF to Audio` button.
 5. **Play Audio** using the `Play Audio` button, which will also display the playback progress.
-
