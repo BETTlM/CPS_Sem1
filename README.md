@@ -1,2 +1,23 @@
-# CPS_Sem1
- 
+# Whisper Docs
+
+Whisper Docs is a desktop application that converts PDF documents to audio files. The app includes a simple login interface, PDF upload, conversion to audio, and playback functionality with a progress indicator.
+
+## Features
+- **Login**: Basic login interface to control access.
+- **PDF Upload**: Allows users to upload PDF files for conversion.
+- **Convert to Audio**: Converts the uploaded PDF to an audio file.
+- **Audio Playback**: Plays the converted audio file within the app.
+- **Progress Display**: Shows audio playback progress.
+
+## Requirements
+- **Python** 3.6 or higher
+- **Required Packages**:
+  - **Pygame** (install using `pip install pygame`)
+  - **pdfminer** (install using `pip install pdfminer.six`)
+  - **Google Text-To-Speech** (install using `pip install gTTS`)
+
+## Installation
+1. Clone the repository and navigate to the project directory:
+   ```bash
+   git clone https://github.com/your-username/whisper-docs.git
+   cd whisper-docs
