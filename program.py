@@ -138,7 +138,7 @@ class AudioConverterApp:
             messagebox.showerror("Conversion Error", f"An error occurred: {error}")
 
     def play_audio(self):
-        audio_file = "Bettim/recordedaudio.mp3"
+        audio_file = "recordedaudio.mp3"
         if os.path.exists(audio_file):
             pygame.mixer.music.load(audio_file)
             pygame.mixer.music.play()
@@ -153,7 +153,7 @@ class AudioConverterApp:
         def update():
             if pygame.mixer.music.get_busy():
                 current_pos = pygame.mixer.music.get_pos() / 1000
-                total_length = self.get_audio_length("Bettim/recordedaudio.mp3")
+                total_length = self.get_audio_length("recordedaudio.mp3")
                 progress_percentage = (current_pos / total_length) * 100 if total_length > 0 else 0
                 self.progress_var.set(f"Progress: {progress_percentage:.2f}%")
                 self.main_frame.after(500, update)
