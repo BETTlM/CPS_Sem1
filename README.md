@@ -19,8 +19,8 @@ Whisper Docs is a desktop application that converts PDF documents to audio files
 ## Installation
 1. Clone the repository and navigate to the project directory:
    ```bash
-   git clone https://github.com/your-username/whisper-docs.git
-   cd whisper-docs
+   git clone https://github.com/BETTlM/CPS_Sem1
+   cd CPS_Sem1
 
 ## Usage
 1. Run the application: 
