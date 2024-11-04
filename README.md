@@ -21,3 +21,18 @@ Whisper Docs is a desktop application that converts PDF documents to audio files
    ```bash
    git clone https://github.com/your-username/whisper-docs.git
    cd whisper-docs
+
+## Usage
+1. Run the application: 
+    ```bash
+    python program.py
+
+2. Login using the following credentials: 
+    Username: `bettim`
+    Password: `1`
+
+3. **Upload a PDF** by clicking the `upload PDF` button.
+
+4. **Convert to audio** by clicking the `Convert PDF to Audio` button.
+5. **Play Audio** using the `Play Audio` button, which will also display the playback progress.
+
