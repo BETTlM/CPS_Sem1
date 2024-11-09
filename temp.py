@@ -120,7 +120,7 @@ class AudioConverterApp:
         try:
             content = pdfminer.extract_text(self.loc)
             writer.writenow(content)
-            audiorecorder.record('/home/bettim/Documents/Kishoore/book.txt', '/home/bettim/Documents/Kishoore/recordedaudio.mp3')
+            audiorecorder.record('book.txt', 'recordedaudio.mp3')
             time.sleep(4)
             self.page.dialog = flet.AlertDialog(
                 title=flet.Text("Audio Converted"),
@@ -135,7 +135,7 @@ class AudioConverterApp:
             self.page.update()
 
     def play_audio(self, e):
-        audio_file = "/home/bettim/Documents/Kishoore/recordedaudio.mp3"
+        audio_file = "recordedaudio.mp3"
         if os.path.exists(audio_file):
             pygame.mixer.music.load(audio_file)
             pygame.mixer.music.play()
