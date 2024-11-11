@@ -142,32 +142,9 @@ class AudioConverterApp:
         if os.path.exists(audio_file):
             pygame.mixer.music.load(audio_file)
             pygame.mixer.music.play()
-            self.update_progress()
-        else:
-            messagebox.showerror("File Not Found", "Please convert a PDF to audio first.")
 
-    def update_progress(self):
-        self.progress_label.pack()
-        self.progress_var.set("Audio is playing...")
-    
-        def update():
-            if pygame.mixer.music.get_busy():
-                current_pos = pygame.mixer.music.get_pos() / 1000
-                total_length = self.get_audio_length("recordedaudio.mp3")
-                progress_percentage = (current_pos / total_length) * 100 if total_length > 0 else 0
-                self.progress_var.set(f"Progress: {progress_percentage:.2f}%")
-                self.main_frame.after(500, update)
-            else:
-                self.progress_label.pack_forget()
-    
-        update()
-    
-    def get_audio_length(self, audio_file):
-        try:
-            sound = pygame.mixer.Sound(audio_file)
-            return sound.get_length()
-        except Exception:
-            return 0
+        else:
+            messagebox.showerror("File Not Found", "Please convert a PDF to audio first.") 
 
 if __name__ == "__main__":
     root = tk.Tk()
