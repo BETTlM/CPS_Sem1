@@ -1,3 +1,5 @@
+#This is the first version of the program without GUI improvements.
+ 
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 import os
